@@ -1,0 +1,30 @@
+.title
+  &__main
+    margin-bottom: 18px
+  &__text
+    font-size: 20px
+    line-height: 24px
+    color: $white
+    max-width: 444px
+    margin-bottom: 69px
+    +md
+      font-size: 18px
+      text-align: center
+  &__btns
+    display: flex
+    align-items: center
+    +md-one(display, none)
+    &_mobile
+      display: none
+      +md
+        display: flex
+        flex-direction: column-reverse
+        margin-top: 48px
+    .btn
+      +md
+        width: 100%
+        justify-content: center
+      &:not(:last-child)
+        margin-right: 34px
+        +md
+          margin: 20px 0 0 0
