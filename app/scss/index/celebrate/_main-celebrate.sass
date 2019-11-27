@@ -1,0 +1,38 @@
+// Blocks
+@import './blocks/_celebrate-item'
+
+
+.celebrate
+  background: #f8f8f8
+  position: relative
+  padding: 99px 0 56px
+  overflow: hidden
+  +md
+    padding: 72px 0 82px
+  &__title-block
+    text-align: center
+    margin-bottom: 50px
+    +md
+      margin-bottom: 47px
+  &__bg-elem
+    position: absolute
+    left: -6px
+    top: 0
+    +md
+      width: 100%
+  &__bg-elem-2
+    position: absolute
+    right: 0
+    bottom: 0
+    +md
+      display: none
+  &__items
+    display: flex
+    flex-wrap: wrap
+    margin: 0 -15px
+    +md
+      display: initial
+    .col-xl-3
+      +md
+        max-width: 260px
+        width: 100%

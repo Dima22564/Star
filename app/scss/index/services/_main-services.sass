@@ -1,0 +1,55 @@
+@import './blocks/_image-2'
+  
+  
+  
+.service
+  padding: 116px 0 127px
+  position: relative
+  +md
+    padding: 75px 0 96px
+  .row
+    +lg
+      margin-bottom: 20px
+    +md
+      margin-bottom: 86px
+  &__snake
+    position: absolute
+    top: 448px
+    left: 27%
+    height: 1073px
+    +xl
+      height: 1154px
+      left: 10%
+    +lg
+      height: 914px
+    +md
+      display: none
+  &__title-block
+    text-align: center
+    margin-bottom: 50px
+  &__text-block
+    +md
+      display: flex
+      flex-direction: column
+      align-items: center
+    h3
+      max-width: 393px
+      margin-bottom: 43px
+      +lg
+        font-size: 23px
+        letter-spacing: 1.23px
+        margin-bottom: 25px
+        max-width: initial
+    .title-block__desc
+      +lg
+        font-size: 18px
+        line-height: 23px
+        letter-spacing: 1px
+  &__btn
+    margin-top: 73px
+    font-weight: bold
+    +sm
+      font-size: 16px
+      letter-spacing: 0.89px
+      .btn__icon
+        margin-right: 4px

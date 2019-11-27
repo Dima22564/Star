@@ -12,4 +12,116 @@ $(document).ready(function () {
     },
   });
 
+  var mySwiper2 = new Swiper('.feedback__slider', {
+    speed: 400,
+    spaceBetween: 100,
+    scrollbar: {
+      el: '.feedback__swiper-scrollbar',
+      draggable: true,
+    },
+    navigation: {
+      nextEl: '.feedback__next',
+      prevEl: '.feedback__prev',
+    },
+  });
+
+  var mySwiper3 = new Swiper('.top-stars-slider', {
+    speed: 400,
+    spaceBetween: 30,
+    slidesPerView: 3,
+    scrollbar: {
+      // el: '.feedback__swiper-scrollbar',
+      draggable: true,
+    },
+    navigation: {
+      nextEl: '.top-slider-next',
+      prevEl: '.top-slider-prev',
+    },
+    pagination: {
+      el: '.top-slider-pagination',
+      // type: 'custom',
+      // dynamicBullets: true,
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `<div class="bullet-wrapper ${className}"><span>${index}</span><div class="circle"><div class="circle-inner"></div></div></div>`;
+      },
+      renderCustom: function (swiper, current, total) {
+        return `<div class="bullet-wrapper">
+            <span class="current">${current}</span>
+            <div class="circle"><div class="circle-inner"></div>
+          </div>`;
+      },
+
+    },
+    breakpoints: {
+      1200: {
+        slidesPerView: 3
+      },
+      768: {
+        slidesPerView: 2
+      },
+      576: {
+        slidesPerView: 1
+      },
+      0: {
+        slidesPerView: 1
+      },
+
+    }
+  });
+
+  mySwiper3.on('paginationUpdate', function (swiper, paginationEl) {
+    var attr = $(paginationEl).find('.swiper-pagination-bullet-active').find('span').text()
+    $(paginationEl).find('.bullet-wrapper').css({
+      transform: `translateX(${244 - +attr * 51}px)`,
+    })
+    console.log(typeof +attr)
+  })
+
+  $('.js-celebrate-items').slick({
+    mobileFirst: true,
+    arrows: false,
+    dots: false,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    variableWidth: true,
+    responsive: [
+      
+      {
+        breakpoint: 768,
+        settings: 'unslick'
+      },
+      
+      
+    ]
+  })
+
+  $(window).on('resize', function () {
+    $('.js-celebrate-items').slick('resize');
+  });
+
+
+  
+  var mySwiper2 = new Swiper('.js-gallery-slider', {
+    speed: 400,
+    spaceBetween: 30,
+    slidesPerView: 2,
+    scrollbar: {
+      el: '.gallery-scrollbar',
+      draggable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      576: {
+        slidesPerView: 1
+      },
+      0: {
+        slidesPerView: 1
+      },
+
+    }
+  });
+
 });

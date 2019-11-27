@@ -1,0 +1,54 @@
+// Blocks
+@import './blocks/_title'
+@import './blocks/_slide'
+@import './blocks/_pagination'
+
+.top
+  background: $white
+  padding: 0 0 114px
+  position: relative
+  +md
+    padding: 0 0 68px
+  &__bg-elem
+    position: absolute
+    right: 0
+    top: -200px
+    +md
+      display: none
+  &__bg-elem-2
+    position: absolute
+    left: 0
+    bottom: 0
+    +md
+      display: none
+  &-stars-slider
+    overflow: hidden
+    margin-top: 30px
+  &-slider-arrows
+    display: flex
+    align-items: center
+    cursor: pointer
+    .top-slider-prev
+      cursor: pointer
+      margin-right: 20px
+      transform: rotate(180deg)
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all 0.2s
+      &:hover
+        opacity: 0.7
+      &.swiper-button-disabled
+        opacity: 0.3
+        transform: scale(0.7) rotate(180deg)
+    .top-slider-next
+      cursor: pointer
+      display: flex
+      align-items: center
+      justify-content: center
+      transition: all 0.2s
+      &:hover
+        opacity: 0.7
+      &.swiper-button-disabled
+        opacity: 0.3
+        transform: scale(0.7)

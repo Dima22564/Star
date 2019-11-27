@@ -1,0 +1,51 @@
+.top-stars-slide
+  margin-top: 25px
+  position: relative
+  &__img
+    width: 100%
+  &__label
+    box-shadow: 0 3px 12px rgba(46, 147, 230, 0.58)
+    background-color: rgba(255, 255, 255, 0.9)
+    bottom: 74px
+    left: 39px
+    border-radius: 36px
+    padding: 22px
+    display: flex
+    align-items: center
+    width: 70%
+    justify-content: flex-end
+    transform: translate(-43px, 96px)
+    +xl
+      padding: 13px 22px
+      font-size: 14px
+    +md
+      transform: translate(-43px,173px)
+    +sm
+      transform: translate(-43px, 96px)
+  &__circle
+    width: 100%
+    position: absolute
+    display: flex
+    align-items: center
+    border-radius: 50%
+    bottom: 0
+    left: 18px
+    height: 100%
+    overflow: hidden
+    +md
+      left: 33px
+    +sm
+      left: 18px
+  &__name
+    margin-right: 33px
+    font-size: 16px
+    letter-spacing: 1.3px
+    font-weight: 600
+    color: $black
+    line-height: 16px
+    +xl
+      margin-right: 10px
+    +sm
+      font-size: 14px
+      line-height: 14px
+      letter-spacing: 1.14px

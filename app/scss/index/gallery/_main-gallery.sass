@@ -1,0 +1,44 @@
+// Blocks
+@import './block/_gallery-item'
+@import './block/_socials'
+@import './block/_apply'
+
+
+.gallery
+  padding: 99px 0 115px
+  background: #f8f8f8
+  position: relative
+  overflow: hidden
+  +md
+    padding: 106px 0 98px
+  &__title-block
+    margin-bottom: 74px
+    text-align: center
+  &__bg-elem-1
+    position: absolute
+    top: 0
+    left: 0
+  .js-gallery-slider
+    display: none
+    +md
+      display: block
+  &-hide
+    +md
+      display: none
+  &-scrollbar
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.09)
+    background-color: rgba(0, 0, 0, 0.1)
+    width: 100%
+    height: 10px
+    border-radius: 5px
+    margin-top: 25px
+    .swiper-scrollbar-drag
+      background-color: rgba(0, 0, 0, 0.4)
+      border-radius: 5px
+      height: 10px
+      cursor: pointer
+  &__socials
+    margin: 34px 0 120px
+    +md
+      margin: 54px 0 100px
+      

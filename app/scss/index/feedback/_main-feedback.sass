@@ -1,0 +1,51 @@
+// Blocks
+@import './blocks/_slide'
+@import './blocks/_image'
+@import './blocks/_slide-text'
+
+.feedback
+  background: $white
+  padding: 119px 0 140px
+  +sm
+    padding: 64px 0 98px
+  .swiper-button-disabled
+    opacity: 0.35
+    cursor: initial
+  &__btns
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    margin-top: 5px
+    position: relative
+    z-index: 4
+  &__wrapper
+    display: flex
+    align-items: center
+    +lg
+      flex-direction: column
+  &__slider
+    overflow: hidden
+  &__swiper-scrollbar
+    background: rgba(0, 0, 0, 0.07)
+    box-shadow: none
+    margin-top: 28px
+    z-index: 4
+    position: relative
+    .swiper-scrollbar-drag
+      background: rgba(0, 0, 0, 0.2)
+      &:hover
+        background: rgba(0, 0, 0, 0.2)
+  .image__img
+    +xl
+      width: 420px
+      height: 420px
+    +lg
+      width: 516px
+      height: 516px
+    +md
+      width: 420px
+      height: 420px
+    +sm
+      width: 250px
+      height: 250px
+  
