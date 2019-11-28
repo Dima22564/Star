@@ -1,0 +1,47 @@
+.topMenu-mobile
+  padding: 15px 20px
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.36), 0 2px 4px 0 rgba(0, 0, 0, 0.15)
+  background: rgba(255, 255, 255, 0.05)
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 10
+  transition: all 0.2s
+  display: none
+  +md
+    display: block
+  &_active
+    background: rgba(0, 0, 0, 0.8) !important
+  &__content
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    border-radius: 4px
+  &__icon
+    color: $white
+    cursor: pointer
+    font-size: 25px
+  &__drop
+    position: absolute
+    bottom: 0
+    left: -20px
+    width: calc(100% + 40px)
+    background: rgba(0, 0, 0, 0.6)
+    transform: translateY(calc(100% + 14px))
+    display: none
+  &__links
+    display: flex
+    flex-direction: column
+  &__link
+    padding: 15px 50px
+    color: $white
+    font-size: 14px
+    line-height: 18px
+  &__contact
+    padding: 20px 0 0 50px
+    margin-bottom: 20px
+  &__mail
+    &:not(:last-child)
+      margin: 0 0 10px 0

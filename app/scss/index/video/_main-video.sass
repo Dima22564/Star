@@ -1,0 +1,55 @@
+.feedback__slide
+  background-image: url('../img/bg-slide.png')
+  background-repeat: no-repeat
+  background-size: cover
+  +lg
+    background-image: none
+  +sm
+    margin-top: 20px
+  .btn-play
+    padding: 23px 50px
+    margin-top: 26px
+  .play-btn-2
+    position: absolute
+    top: 30px
+    left: 0
+    z-index: 12
+    cursor: pointer
+    +sm
+      width: 68px
+      height: 68px
+      img
+        width: 100%
+  .video__img
+    +lg
+      width: 516px !important
+      height: 516px !important
+    +sm
+      width: 290px !important
+      height: 290px !important
+  .video-text
+    +lg
+      justify-content: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      max-width: 512px !important
+    +sm
+      max-width: 286px !important
+  .video__par
+    display: block !important
+.video__image__element
+  bottom: -30px !important
+  top: initial !important
+  left: -30px !important
+  +lg
+    top: -55px !important
+    bottom: initial !important
+    width: 250px
+    height: 250px
+    left: 50px !important
+  +sm
+    width: 168px
+    height: 168px
+    top: -30px !important
+    left: 29px !important

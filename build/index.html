@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- Top menu-->
-        <section class="topMenu"><a class="topMenu__logo" href><img src="./img/logo.png" alt></a>
+        <section class="topMenu js-topMenu"><a class="topMenu__logo" href><img src="./img/logo.png" alt></a>
             <ul class="topMenu__links">
                 <li class="topMenu__item"><a class="topMenu__link" href>Главная</a></li>
                 <li class="topMenu__item"><a class="topMenu__link" href>Отзывы</a></li>
@@ -21,6 +21,14 @@
                 <li class="topMenu__item"><a class="topMenu__link" href>Галерея</a></li>
             </ul>
             <div class="topMenu__right"><a class="topMenu__mail" href><i class="fa fa-envelope" aria-hidden="true"></i><span>info@allstars.ru</span></a><a class="topMenu__mail topMenu__mail_white" href><i class="fa fa-phone" aria-hidden="true"></i><span>8 800 451 52 51</span></a></div>
+        </section>
+        <section class="topMenu-mobile js-topMenu js-topMenu-mobile">
+            <div class="topMenu-mobile__content"><a class="topMenu-mobile__logo" href><img src="./img/logo.png" alt></a><i class="fa fa-bars topMenu-mobile__icon js-burger" aria-hidden="true"></i>
+                <div class="topMenu-mobile__drop js-topMenu-mobile-drop">
+                    <div class="topMenu-mobile__links"><a class="topMenu-mobile__link" href>Главная</a><a class="topMenu-mobile__link" href>Отзывы</a><a class="topMenu-mobile__link" href>ТОП артистов</a><a class="topMenu-mobile__link" href>Мероприятия</a><a class="topMenu-mobile__link" href>Гарантии</a><a class="topMenu-mobile__link" href>Галерея</a></div>
+                    <div class="topMenu-mobile__contact"><a class="topMenu__mail topMenu-mobile__mail" href><i class="fa fa-envelope" aria-hidden="true"></i><span>info@allstars.ru</span></a><a class="topMenu__mail topMenu__mail_white topMenu-mobile__mail" href><i class="fa fa-phone" aria-hidden="true"></i><span>8 800 451 52 51</span></a></div>
+                </div>
+            </div>
         </section>
         <!-- Header  adapted = true-->
         <header class="header">
@@ -101,6 +109,7 @@
                                 <div class="slide-text">
                                     <p class="slide-text__title">За 15 лет организовали более 400 мероприятий</p>
                                     <p class="slide-text__text">Косвенная реклама, согласно Ф.Котлеру, стабилизирует культурный стратегический маркетинг. Клиентский спрос, безусловно, спонтанно экономит креатив. Выставка ускоряет имидж, повышая конкуренцию.</p>
+                                    <p class="slide-text__text slide-text__text_mobile">Посмотрите отзывы звезд и наших клиентов за 1,5 минуты</p>
                                 </div>
                             </div>
                         </div>
@@ -112,6 +121,7 @@
                                 <div class="slide-text">
                                     <p class="slide-text__title">За 15 лет организовали более 400 мероприятий</p>
                                     <p class="slide-text__text">Косвенная реклама, согласно Ф.Котлеру, стабилизирует культурный стратегический маркетинг. Клиентский спрос, безусловно, спонтанно экономит креатив. Выставка ускоряет имидж, повышая конкуренцию.</p>
+                                    <p class="slide-text__text slide-text__text_mobile">Посмотрите отзывы звезд и наших клиентов за 1,5 минуты</p>
                                 </div>
                             </div>
                         </div>
@@ -123,6 +133,7 @@
                                 <div class="slide-text">
                                     <p class="slide-text__title">За 15 лет организовали более 400 мероприятий</p>
                                     <p class="slide-text__text">Косвенная реклама, согласно Ф.Котлеру, стабилизирует культурный стратегический маркетинг. Клиентский спрос, безусловно, спонтанно экономит креатив. Выставка ускоряет имидж, повышая конкуренцию.</p>
+                                    <p class="slide-text__text slide-text__text_mobile">Посмотрите отзывы звезд и наших клиентов за 1,5 минуты</p>
                                 </div>
                             </div>
                         </div>
@@ -321,7 +332,7 @@
                 </div>
             </div>
         </section>
-        <!-- Gallery  adapted =  -->
+        <!-- Gallery  adapted =  true-->
         <section class="gallery"><img class="gallery__bg-elem-1" src="./img/bg-elem-2.svg" alt>
             <div class="container">
                 <div class="gallery__title-block title-block">
@@ -451,6 +462,31 @@
                 </div>
             </div>
         </section>
+        <!-- Footer  adapted =  true-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__content">
+                    <div class="footer__desc"><a class="footer__logo" href><img src="./img/star-logo.png" alt>
+                            <p class="footer__logo-text">STAR<span>ON</span>PARTY</p>
+                        </a>
+                        <p class="footer__text">Организация мероприятий с участием звезд эстрады</p>
+                    </div>
+                    <div class="footer__block">
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__link" href>Главная</a></li>
+                            <li class="footer__item"><a class="footer__link" href>Отзывы</a></li>
+                            <li class="footer__item"><a class="footer__link" href>ТОП артистов</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><a class="footer__link" href>Главная</a></li>
+                            <li class="footer__item"><a class="footer__link" href>Отзывы</a></li>
+                            <li class="footer__item"><a class="footer__link" href>ТОП артистов</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__block2"><a class="topMenu__mail footer__mail topMenu__mail_white" href><i class="fa fa-phone" aria-hidden="true"></i><span>8 800 451 52 51</span></a><a class="topMenu__mail footer__mail" href><i class="fa fa-envelope" aria-hidden="true"></i><span>info@allstars.ru</span></a><a class="footer__policy" href>Политика конфеденциальности</a></div>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>

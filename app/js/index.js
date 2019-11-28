@@ -86,13 +86,13 @@ $(document).ready(function () {
     slidesToScroll: 1,
     variableWidth: true,
     responsive: [
-      
+
       {
         breakpoint: 768,
         settings: 'unslick'
       },
-      
-      
+
+
     ]
   })
 
@@ -101,7 +101,7 @@ $(document).ready(function () {
   });
 
 
-  
+
   var mySwiper2 = new Swiper('.js-gallery-slider', {
     speed: 400,
     spaceBetween: 30,
@@ -123,5 +123,27 @@ $(document).ready(function () {
 
     }
   });
+
+  $(window).on('scroll', function (e) {
+    $('.js-topMenu-mobile-drop').slideUp()
+    $('.js-topMenu-mobile').removeClass('topMenu-mobile_active')
+    console.log($('.header').outerHeight(true))
+    if (+$(window).scrollTop() > +$('.header').outerHeight(true)) {
+      $('.js-topMenu').css({
+        backgroundColor: 'rgba(0, 0, 0, 0.8)'
+      })
+      console.log('sgrdg')
+    }
+    else {
+      $('.js-topMenu').css({
+        'backgroundColor': 'rgba(255,255,255,0.05)'
+      })
+    }
+  })
+
+  $('.js-burger').click(function(){
+    $('.js-topMenu-mobile-drop').slideToggle()
+    $('.js-topMenu-mobile').toggleClass('topMenu-mobile_active')
+  })
 
 });
