@@ -13,12 +13,12 @@
         <!-- Top menu-->
         <section class="topMenu js-topMenu"><a class="topMenu__logo" href><img src="./img/logo.png" alt></a>
             <ul class="topMenu__links">
-                <li class="topMenu__item"><a class="topMenu__link" href>Главная</a></li>
-                <li class="topMenu__item"><a class="topMenu__link" href>Отзывы</a></li>
-                <li class="topMenu__item"><a class="topMenu__link" href>ТОП артистов</a></li>
-                <li class="topMenu__item"><a class="topMenu__link" href>Мероприятия</a></li>
-                <li class="topMenu__item"><a class="topMenu__link" href>Гарантии</a></li>
-                <li class="topMenu__item"><a class="topMenu__link" href>Галерея</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="main">Главная</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="feedback">Отзывы</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="top">ТОП артистов</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="celebrate">Мероприятия</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="service">Гарантии</a></li>
+                <li class="topMenu__item"><a class="topMenu__link js-link" href data-link="gallery">Галерея</a></li>
             </ul>
             <div class="topMenu__right"><a class="topMenu__mail" href><i class="fa fa-envelope" aria-hidden="true"></i><span>info@allstars.ru</span></a><a class="topMenu__mail topMenu__mail_white" href><i class="fa fa-phone" aria-hidden="true"></i><span>8 800 451 52 51</span></a></div>
         </section>
@@ -31,7 +31,7 @@
             </div>
         </section>
         <!-- Header  adapted = true-->
-        <header class="header">
+        <header class="header" id="main">
             <div class="container">
                 <div class="row justify-content-md-center">
                     <div class="col-xl-8 col-lg-8">
@@ -39,7 +39,7 @@
                             <h1 class="title__main">Пригласить звезду эстрады в любую точку мира</h1>
                             <p class="title__text">Организация под ключ. Прямой договор с артистом и агентсткое сопровождение</p>
                             <div class="title__btns">
-                                <button class="btn btn-violet"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
+                                <button class="btn btn-violet js-popup-show"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
                                 <button class="btn btn-transparent"><img class="btn__icon" src="./img/list.svg" alt><span>прайс-лист</span></button>
                             </div>
                         </div>
@@ -85,7 +85,7 @@
             </div>
         </header>
         <!-- Feedback  adapted = true-->
-        <section class="feedback">
+        <section class="feedback" id="feedback">
             <div class="container">
                 <div class="feedback__slider">
                     <div class="swiper-wrapper">
@@ -147,7 +147,7 @@
             </div>
         </section>
         <!-- Top  adapted = true-->
-        <section class="top"><img class="top__bg-elem" src="./img/bg-elem-1.svg" alt><img class="top__bg-elem-2" src="./img/bg-elem-3-1.png" alt>
+        <section class="top" id="top"><img class="top__bg-elem" src="./img/bg-elem-1.svg" alt><img class="top__bg-elem-2" src="./img/bg-elem-3-1.png" alt>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-6">
@@ -225,7 +225,7 @@
             </div>
         </section>
         <!-- Celebrate  adapted =  true-->
-        <section class="celebrate"><img class="celebrate__bg-elem" src="./img/bg-elem-2.svg" alt><img class="celebrate__bg-elem-2" src="./img/bg-elem-4.svg" alt>
+        <section class="celebrate" id="celebrate"><img class="celebrate__bg-elem" src="./img/bg-elem-2.svg" alt><img class="celebrate__bg-elem-2" src="./img/bg-elem-4.svg" alt>
             <div class="container">
                 <div class="celebrate__title-block title-block">
                     <h2>Привезем звезду на любой праздник</h2>
@@ -284,7 +284,7 @@
             </div>
         </section>
         <!-- Services  adapted =  true-->
-        <section class="service"><img class="service__snake" src="./img/snake.svg" alt>
+        <section class="service" id="service"><img class="service__snake" src="./img/snake.svg" alt>
             <div class="container">
                 <div class="service__title-block title-block">
                     <h2>Всю организацию выступления звезды берем на себя</h2>
@@ -326,14 +326,14 @@
                         <div class="service__text-block title-block">
                             <h3>Прямой договор с артистом. Cопровождение</h3>
                             <p class="title-block__desc">Работаем без комиссий. Вы заключаете прямой договор с исполнителем. Большинство агентств делает накрутки, из-за того что клиент не знает реальных цен. Мы зарабатываем только на организации мероприятия. Все прозрачно.</p>
-                            <button class="btn btn-violet service__btn"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
+                            <button class="btn btn-violet service__btn js-popup-show"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Gallery  adapted =  true-->
-        <section class="gallery"><img class="gallery__bg-elem-1" src="./img/bg-elem-2.svg" alt>
+        <section class="gallery" id="gallery"><img class="gallery__bg-elem-1" src="./img/bg-elem-2.svg" alt>
             <div class="container">
                 <div class="gallery__title-block title-block">
                     <h2>Медиагалерея наших мероприятий</h2>
@@ -454,7 +454,7 @@
                                 <p class="title-block__desc">Заполните простую заявку или запросите прайс-лист артистов. Мы подберем артиста и организуем все под ключ</p>
                             </div>
                             <div class="apply__btns">
-                                <button class="btn btn-violet apply__btn"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
+                                <button class="btn btn-violet apply__btn js-popup-show"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
                                 <button class="btn apply__list apply__btn"><img class="btn__icon" src="./img/list.svg" alt><span>прайс-лист</span></button>
                             </div>
                         </div>
@@ -473,20 +473,32 @@
                     </div>
                     <div class="footer__block">
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href>Главная</a></li>
-                            <li class="footer__item"><a class="footer__link" href>Отзывы</a></li>
-                            <li class="footer__item"><a class="footer__link" href>ТОП артистов</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="main">Главная</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="feedback">Отзывы</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="top">ТОП артистов</a></li>
                         </ul>
                         <ul class="footer__list">
-                            <li class="footer__item"><a class="footer__link" href>Главная</a></li>
-                            <li class="footer__item"><a class="footer__link" href>Отзывы</a></li>
-                            <li class="footer__item"><a class="footer__link" href>ТОП артистов</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="celebrate">Главная</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="service">Отзывы</a></li>
+                            <li class="footer__item"><a class="footer__link js-link" href data-link="gallery">ТОП артистов</a></li>
                         </ul>
                     </div>
                     <div class="footer__block2"><a class="topMenu__mail footer__mail topMenu__mail_white" href><i class="fa fa-phone" aria-hidden="true"></i><span>8 800 451 52 51</span></a><a class="topMenu__mail footer__mail" href><i class="fa fa-envelope" aria-hidden="true"></i><span>info@allstars.ru</span></a><a class="footer__policy" href>Политика конфеденциальности</a></div>
                 </div>
             </div>
         </footer>
+        <!-- popup-->
+        <div class="popup__wrapper js-popup">
+            <div class="popup__body js-popup-body">
+                <form class="popup__form" action>
+                    <p class="popup__title">Заполните форму</p>
+                    <p class="popup__text">Мы свяжемся с Вами ближайшее время</p>
+                    <input class="popup__input" type="text" placeholder="Ваше имя">
+                    <input class="popup__input" type="text" placeholder="Ваш телефон">
+                    <button class="btn btn-violet popup__btn"><img class="btn__icon" src="./img/star.svg" alt><span>Пригласить звезду</span></button>
+                </form>
+            </div>
+        </div>
     </body>
     <script src="./libs/js/vendor.min.js"></script>
     <script src="./js/index.js"></script>
