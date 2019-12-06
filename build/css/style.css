@@ -1107,6 +1107,41 @@ a:active {
   display: none;
 }
 
+.gallery .js-gallery-slider .gallery-item {
+  width: 250px !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.gallery .js-gallery-slider .gallery-item_1 {
+  background-image: url("../img/gallery-1.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_2 {
+  background-image: url("../img/gallery-2.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_3 {
+  background-image: url("../img/gallery-3.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_4 {
+  background-image: url("../img/gallery-4.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_5 {
+  background-image: url("../img/gallery-5.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_6 {
+  background-image: url("../img/gallery-1.jpg");
+}
+
+.gallery .js-gallery-slider .gallery-item_7 {
+  background-image: url("../img/gallery-2.jpg");
+}
+
 .gallery-scrollbar {
   -webkit-box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.09);
   box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.09);

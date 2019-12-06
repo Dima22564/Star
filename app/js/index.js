@@ -105,6 +105,7 @@ $(document).ready(function () {
   var mySwiper2 = new Swiper('.js-gallery-slider', {
     speed: 400,
     spaceBetween: 30,
+    width: 250,
     slidesPerView: 2,
     scrollbar: {
       el: '.gallery-scrollbar',
