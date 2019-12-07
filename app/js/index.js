@@ -43,7 +43,7 @@ $(document).ready(function () {
       // dynamicBullets: true,
       clickable: true,
       renderBullet: function (index, className) {
-        return `<div class="bullet-wrapper ${className}"><span>${index}</span><div class="circle"><div class="circle-inner"></div></div></div>`;
+        return `<div class="bullet-wrapper ${className}"><span>${index + 1}</span><div class="circle"><div class="circle-inner"></div></div></div>`;
       },
       renderCustom: function (swiper, current, total) {
         return `<div class="bullet-wrapper">
@@ -75,7 +75,6 @@ $(document).ready(function () {
     $(paginationEl).find('.bullet-wrapper').css({
       transform: `translateX(${244 - +attr * 51}px)`,
     })
-    console.log(typeof +attr)
   })
 
   $('.js-celebrate-items').slick({

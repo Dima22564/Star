@@ -1,7 +1,5 @@
 "use strict";
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
 $(document).ready(function () {
   var mySwiper = new Swiper('.swiper-container', {
     speed: 400,
@@ -45,7 +43,7 @@ $(document).ready(function () {
       // dynamicBullets: true,
       clickable: true,
       renderBullet: function renderBullet(index, className) {
-        return "<div class=\"bullet-wrapper ".concat(className, "\"><span>").concat(index, "</span><div class=\"circle\"><div class=\"circle-inner\"></div></div></div>");
+        return "<div class=\"bullet-wrapper ".concat(className, "\"><span>").concat(index + 1, "</span><div class=\"circle\"><div class=\"circle-inner\"></div></div></div>");
       },
       renderCustom: function renderCustom(swiper, current, total) {
         return "<div class=\"bullet-wrapper\">\n            <span class=\"current\">".concat(current, "</span>\n            <div class=\"circle\"><div class=\"circle-inner\"></div>\n          </div>");
@@ -71,7 +69,6 @@ $(document).ready(function () {
     $(paginationEl).find('.bullet-wrapper').css({
       transform: "translateX(".concat(244 - +attr * 51, "px)")
     });
-    console.log(_typeof(+attr));
   });
   $('.js-celebrate-items').slick({
     mobileFirst: true,
